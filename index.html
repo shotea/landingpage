@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Gym Link</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="gyms.html">Find a Gym</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Gym Link</h1>
+                <p>Your gateway to thousands of gyms across the USA. Join us and unlock endless fitness possibilities!</p>
+                <button id="signupButton">Sign Up</button>
+            </div>
+        </section>
+        <section id="locateGym">
+            <div class="locate-gym-container">
+                <h2>Find a Gym Near You</h2>
+                <div class="locate-gym-content">
+                    <div class="input-group">
+                        <label for="zipCode">ZIP Code:</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Enter ZIP Code">
+                    </div>
+                    <div class="input-group">
+                        <label for="miles">Miles:</label>
+                        <input type="number" id="miles" name="miles" placeholder="Enter miles" min="1">
+                    </div>
+                    <button id="findGymButton">Find Gym</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="signupSection" style="display:none;">
+            <div id="signupFormContainer">
+                <form id="signupForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <span id="usernameError" class="error"></span>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error"></span>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span id="passwordError" class="error"></span>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gym Link. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
